@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Rooms and Rates";
+}
+
+<style>
+    .blue-box {
+        background-color: #003366;
+        width: 1300px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .blue-box h2 {
+            margin-bottom: 10px;
+        }
+
+    .book-now-btn {
+        background-color: #ffecb3;
+        color: #333;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 500px;
+        margin: 20px auto;
+        width: 50%;
+    }
+</style>
+
+<main aria-labelledby="title">
+    <center>
+        <h1>ROOMS AND RATES</h1>
+    </center>
+    <br />
+
+    <p>
+        Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces.
+    </p>
+
+    <br /><br /><br />
+    <img src="~/images/luxury1.jpg" width="1300">
+    <div class="blue-box">
+        <h2>Luxury Room</h2>
+
+    </div>
+    <center><a href="@Url.Action("taj_customer_info", "Home")" class="book-now-btn">Book Now</a></center>
+    <div class="line">
+        <center>
+            <hr />
+        </center>
+    </div>
+
+    <br /><br /><br />
+    <img src="~/images/room1.jpg" width="1300">
+    <div class="blue-box">
+        <h2>Double Room</h2>
+
+    </div>
+    <center><a href="@Url.Action("taj_customer_info", "Home")" class="book-now-btn">Book Now</a></center>
+    <div class="line">
+        <center>
+            <hr />
+        </center>
+    </div>
+
+    <br /><br /><br />
+    <img src="~/images/twin1.jpg" width="1300">
+    <div class="blue-box">
+        <h2>Twin Room</h2>
+    </div>
+    <center><a href="@Url.Action("taj_customer_info", "Home")" class="book-now-btn">Book Now</a></center>
+    <div class="line">
+        <center>
+            <hr />
+        </center>
+    </div>
+
+    <br /><br /><br />
+
+    <center>
+        <a href="@Url.Action("Contact", "Home")">
+            <img src="~/images/left.png" alt="Navigation Image Left" width="56" />
+        </a>
+        <a href="@Url.Action("taj_customer_info", "Home")">
+            <img src="~/images/right.png" alt="Navigation Image Right" width="70" />
+        </a>
+    </center>
+    <br /><br />
+</main>

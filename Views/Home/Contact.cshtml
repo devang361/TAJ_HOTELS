@@ -1,0 +1,210 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<main aria-labelledby="title">
+
+    <style>
+
+        .image-container {
+            position: relative;
+        }
+
+        .romen {
+            font-family: "Times New Roman", Times, serif !important;
+        }
+
+        .card-body {
+            padding: 3px; /* Adjust the padding as needed */
+        }
+
+        .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; /* Text color */
+        }
+
+            .centered-text h1 {
+                font-family: 'Aclonica', sans-serif; /* Use Aclonica font */
+                font-size: 92px; /* Adjust the font size as needed */
+            }
+
+        .card-body h2 {
+            font-family: 'Aclonica', sans-serif; /* Use Aclonica font */
+            font-size: 92px; /* Adjust the font size as needed */
+        }
+
+        .dark-blue-bg {
+            background-color: #003366;
+            color: white;
+        }
+
+        .book-now-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffecb3; /* Cream color */
+            color: #333; /* Text color */
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+            .book-now-btn:hover {
+                background-color: #ffe066; /* Lighter cream color on hover */
+            }
+
+        .navbar {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+        }
+
+            .navbar ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+                .navbar ul li {
+                    display: inline;
+                    margin-right: 20px;
+                }
+
+                    .navbar ul li:last-child {
+                        margin-right: 0;
+                    }
+
+                    .navbar ul li a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+        /* Facilities */
+        .centered-text-facilities {
+            position: absolute;
+            bottom: 50%; /* Position at the bottom */
+            left: 50%;
+            transform: translate(-50%, 50%); /* Center horizontally and move up by 50% of the text height */
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        /* Login & Sign Up */
+
+
+        h1 {
+            font-family: 'Aclonica', sans-serif;
+        }
+    </style>
+
+    </br>
+    <center>
+        <h1>Facilities</h1>
+    </center>
+    </br>
+
+    <p>
+        We want your stay at our lush hotel to be truly unforgettable. That is why we give special attention to all of your needs so
+        that we can ensure an experience quite unique. Luxury hotels offer the perfect setting with stunning views for leisure
+        and our modern luxury resort facilities will help you enjoy the best of all.
+    </p>
+
+    </br>
+
+    <center>
+        <div class="image-container">
+            <img src="~/Images/service.jpg" alt="Luxury Service" width="1000">
+            <div class="content">
+                <div class="centered-text">
+                    <h1>Luxury Service</h1>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    </br></br></br>
+
+    <center>
+        <div class="image-container">
+            <img src="~/Images/bar.jpg" alt="Luxury Bar" width="1000">
+            <div class="content">
+                <div class="centered-text">
+                    <h1>Luxury Bar</h1>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    </br></br></br>
+
+    <center>
+        <div class="image-container">
+            <img src="~/Images/gym.jpg" alt="Luxury Gym" width="1000">
+            <div class="content">
+                <div class="centered-text">
+                    <h1>Luxury Gym</h1>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    </br></br></br>
+
+    <center>
+        <div class="image-container">
+            <img src="~/Images/luxuryrestaurent.jpg" alt="Luxury Restaurant" width="1000">
+            <div class="content">
+                <div class="centered-text">
+                    <h1>Luxury Restaurant</h1>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    </br></br></br>
+
+    <center>
+        <div class="image-container">
+            <img src="~/Images/spa.jpg" alt="Luxury Spa" width="1000">
+            <div class="content">
+                <div class="centered-text">
+                    <h1>Luxury Spa</h1>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    </br></br></br>
+
+  
+
+    </br></br></br>
+
+    </br></br>
+
+    <center>
+        <a href="@Url.Action("Index", "Home")">
+            <img src="~/Images/left.png" alt="Navigation Image Left" width="56" />
+        </a>
+        <a href="@Url.Action("About", "Home")">
+            <img src="~/Images/right.png" alt="Navigation Image Right" width="70" />
+        </a>
+    </center>
+
+
+    </br></br>
+
+</main>

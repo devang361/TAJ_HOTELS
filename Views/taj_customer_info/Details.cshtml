@@ -1,0 +1,50 @@
+﻿@model TAJ_HOTELS.Models.taj_customer_info
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>taj_customer_info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAY)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <style>
+        .card_padding {
+            padding: 20px;
+        }
+
+            .card_padding h2 {
+                font-family: 'Aclonica', sans-serif;
+            }
+    </style>
+
+    </br></br><div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card_padding">
+                        <b> <h2 class="card-body">Luxury Redefined</h2></b>
+                        <p class="card-body" font-family: 'Aclonica' , sans-serif;>Hotel Taj offers a luxurious experience like no other, boasting a collection of exquisite rooms designed to indulge the senses and cater to the desires of discerning travelers. Our luxury rooms are meticulously crafted to provide an unparalleled level of comfort, style, and sophistication, ensuring that every moment of your stay is nothing short of extraordinary.</p>
+                        <p class="card-body" font-family: 'Aclonica' , sans-serif;>Step into a world of opulence and refinement as you enter our elegantly appointed rooms, where every detail has been thoughtfully curated to exceed your expectations.</p>
+                        <center><a href="@Url.Action("taj_customer_info", "Home")" class="book-now-btn">Book Now</a></center> </br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="~/images/luxury.jpeg" class="card-img" alt="Your Image">
+            </div>
+        </div>
+    </div></br></br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card_padding">
+                        <b> <h2 class="card-body">Leave your Worries in the sand</h2></b>
+                        <p class="card-body">
+                            Taj Hotels redefine luxury with their exquisite swimming pools, offering guests a serene oasis amidst opulent surroundings. Impeccably designed and meticulously maintained, each pool reflects the epitome of sophistication and indulgence. Surrounded by lush greenery or overlooking breathtaking vistas, Taj Hotels' swimming pools provide a tranquil escape for relaxation and rejuvenation.
+
+                        </p>
+                        <p class="card-body">Guests are welcomed to immerse themselves in the lap of luxury as they bask in the sun-drenched ambiance or take a refreshing dip in the crystal-clear waters. Whether enjoying a leisurely swim or lounging by the poolside, the Taj Hotels experience ensures every moment is imbued with unparalleled comfort and elegance.</p>
+                        <center><a href="@Url.Action("taj_customer_info", "Home")" class="book-now-btn">Book Now</a></center> </br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                </br> <img src="~/images/pool.jpg" class="card-img" alt="Your Image">
+            </div>
+        </div>
+    </div>
+    </br></br></br>
+    <center>
+        <a href="@Url.Action("Contact", "Home")">
+            <img src="~/images/right.png" alt="nevigation image left" width="70" />
+        </a>
+    </center></br></br>
+    @section Scripts {
+        <!-- Include additional script files or script blocks here -->
+        <script src="~/Scripts/my-script.js"></script>
+    }
+</main>
